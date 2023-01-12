@@ -1,12 +1,10 @@
 # Credit-Card-Validator
 
-This program uses regular expressions to validate credit card numbers and it takes in two arguments
+This program uses regular expressions to validate a credit card number and determine the type of card. It takes in one argument, the card number. 
 
-> The card number and the card type. 
+It checks if the card number matches the format of a Visa card, a Mastercard, an American Express or a Discover. Each card type has its own regex pattern. 
 
 ### Based on the card type, a specific regular expression is used to test the card number. 
-
-The regular expressions used are specific to the card type and are designed to match the format of the card number. 
 
 The regex patterns should be as follow
 
@@ -19,3 +17,4 @@ The regex patterns should be as follow
 > Discover starts with 6011 or 65 and 16 digits in total
 
 If the card number matches the pattern for the given card type, the program returns "Valid card number", otherwise it returns "Invalid card number".
+
