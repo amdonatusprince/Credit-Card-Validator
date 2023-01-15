@@ -1,4 +1,5 @@
 
+const prompt = require("prompt-sync")();
 
 function validateCreditCard(cardNumber) {
 
@@ -20,4 +21,9 @@ function validateCreditCard(cardNumber) {
     }
 
   }
+
+
+  let myCardNum = prompt('Enter your card number here to validate: ') // input any card number you wish to validate
+  validateCreditCard(myCardNum)
   
+
